@@ -1,0 +1,19 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+#navBar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #0567AF;
+    padding: 1rem;
+    z-index: 2;
+}
+
+#windingStep {
+  visibility: hidden;
+  height: 0;
+}
+
+#heroResult {
+  visibility: hidden;
+}
