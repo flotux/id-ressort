@@ -27,7 +27,7 @@
         <li><a class="has-text-light" href="#feedCalcul">Plage de palpage</a></li>
       </ul>
     </nav>
-
+    <!--sensor feed box -->
     <div class="column" id="feedCalcul">
       <div class="box">
         <section class="section">
@@ -43,8 +43,8 @@
           <label class="label">Diamètre du ressort:</label>
           <div class="field has-addons has-addons-fullwidth">
             <p class="control">
-              <input class="input" type="number" placeholder="diamètre extérieur en millimètre" step=
-              0.01 id="springDiam">
+              <input class="input springDiam" type="number" placeholder="diamètre extérieur en millimètre" step=
+              0.01 id="sensorSpringDiam">
             </p>
             <p class="control">
               <a class="button is-static">mm</a>
@@ -53,8 +53,8 @@
           <label class="label">Tolérance ± au diamètre:</label>
           <div class="field has-addons has-addons-fullwidth">
             <p class="control">
-              <input class="input" type="number" placeholder="diamètre extérieur en millimètre" step=
-              0.01 id="diamTolerance">
+              <input class="input diamTolerance" type="number" placeholder="diamètre extérieur en millimètre" step=
+              0.01 id="sensorDiamTolerance">
             </p>
             <p class="control">
               <a class="button is-static">mm</a>
@@ -63,8 +63,8 @@
           <label class="label">Nombre de spires:</label>
           <div class="field has-addons has-addons-fullwidth">
             <p class="control">
-              <input class="input" type="number" placeholder="diamètre extérieur en millimètre" step=
-              0.01 id="numberOfCoils">
+              <input class="input numberOfCoils" type="number" placeholder="diamètre extérieur en millimètre" step=
+              0.01 id="sensorNumberOfCoils">
             </p>
             <p class="control">
               <a class="button is-static">spires</a>
@@ -90,7 +90,5 @@
     <div>
       <button class="button is-danger is-outlined" id="reset" onclick="clearInputs()">Delete</button>
     </div>
-
-
   </body>
 </html>
