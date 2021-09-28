@@ -33,10 +33,6 @@ function sensorFeedCalculation() {
     }
 }
 
-function resetSensorFeedCalculation() {   
-}
-
-
 /**
  * check the validity of numbers inputs.
  * call a function to inlight then if they value is 0.
