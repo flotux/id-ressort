@@ -38,30 +38,7 @@
                 Calculer la plage de palpage d'un ressort.
             </p>
         </section>
-        <label class="label">Type d'enroulement :</label>  
-        <div class="buttons has-addons">
-          <label class="radio">
-            <input type="radio" name="foobar" onclick="haveStep()" checked>
-            Spires jointives
-          </label>
-          <label class="radio">
-            <input type="radio" name="foobar" onclick="haveNoStep()">
-            Spires non jointives
-          </label>
-        </div>
-        <!--windingStep-->
-        <div id="windingStep">
-          <label class="label">Hauteur d'enroulement:</label>
-          <div class="field has-addons has-addons-fullwidth">
-            <p class="control">
-              <input class="input" type="number" placeholder="diamètre extérieur en millimètre" step=
-              0.01>
-            </p>
-            <p class="control">
-              <a class="button is-static">mm</a>
-            </p>
-          </div>
-        </div>
+        
         <!--Forms for calculation-->
           <label class="label">Diamètre du ressort:</label>
           <div class="field has-addons has-addons-fullwidth">
@@ -98,23 +75,22 @@
             <div class="control">
               <button class="button is-info" onclick="sensorFeedCalculation()">Calculer</button>
             </div>
-            <div class="control">
-              <button class="button is-info is-light" onclick="resetSensorFeedCalculation()">Annuler</button>
-            </div>
           </div>
       </div>
+      <section class="hero is-success is-small" id="heroResult">
+        <div class="hero-body">
+          <p class="title" id="sensorFeedResult">
+          </p>
+          <p class="subtitle" id"entireResult">
+          </p>
+        </div>
+      </section>
     </div>
 
-    <section class="hero is-success is-small" id="heroResult">
-      <div class="hero-body">
-        <p class="title" id="sensorFeedResult">
-          
-        </p>
-        <p class="subtitle" id"entireResult">
-          
-        </p>
-      </div>
-    </section>       
+    <div>
+      <button class="button is-danger is-outlined" id="reset" onclick="clearInputs()">Delete</button>
+    </div>
+
 
   </body>
 </html>
