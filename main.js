@@ -1,12 +1,12 @@
 
 
-function sensorFeedCalculation(reset = false) {
+function sensorFeedCalculation(clear = false) {
 
     const springDiam = document.getElementById("sensorSpringDiam");
     const diamTolerance = document.getElementById("sensorDiamTolerance");
     const numberOfCoils = document.getElementById("sensorNumberOfCoils");
 
-    if (reset) {
+    if (clear) {
         document.getElementById("heroResult").style.visibility = "hidden";
         springDiam.value = "";
         diamTolerance.value = "";
