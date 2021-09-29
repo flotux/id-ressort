@@ -5,8 +5,8 @@ function sensorFeedCalculation(clear = false) {
     if (clear) {
         document.getElementById("heroResult").style.visibility = "hidden";
         document.getElementById("sensorSpringDiam").value = "";
-        diamTolerance = document.getElementById("sensorDiamTolerance").value = "";
-        const numberOfCoils = document.getElementById("sensorNumberOfCoils").value = "";
+        document.getElementById("sensorDiamTolerance").value = "";
+        document.getElementById("sensorNumberOfCoils").value = "";
         return;
     }
 
