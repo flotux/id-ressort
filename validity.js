@@ -9,9 +9,7 @@
     var paramValidity = true;
     inputs.forEach(element => {
        if (!element.value || element.value == 0) {
-           element.classList.add("is-danger");
-           element.value="";
-           element.placeholder='Entrer un nombre sup. à 0';
+           numberInputInlight(element);
            paramValidity = false;
        } else {
         element.classList.remove("is-danger");
@@ -19,4 +17,10 @@
     });
 
     return paramValidity;
+}
+
+function numberInputInlight(input) {
+    input.classList.add("is-danger");
+    input.value="";
+    input.placeholder='Entrer un nombre sup. à 0';
 }
