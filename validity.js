@@ -8,7 +8,7 @@
  function numberInputValidation(...inputs) {  
     var paramValidity = true;
     inputs.forEach(element => {
-       if (!element.value || element.value == 0) {
+       if (!element.value || element.value <= 0) {
            numberInputInlight(element);
            paramValidity = false;
        } else {
